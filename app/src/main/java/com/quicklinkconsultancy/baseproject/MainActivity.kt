@@ -2,6 +2,7 @@ package com.quicklinkconsultancy.baseproject
 
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
+import android.databinding.Observable
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -10,6 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.example.android.observability.ui.ViewModelFactory
 import com.quicklinkconsultancy.baseproject.databinding.ActivityMainBinding
 import com.quicklinkconsultancy.baseproject.db.Repository
@@ -48,6 +50,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        viewModel.isLoading.addOnPropertyChangedCallback(object : Observable.OnPropertyChangedCallback() {
+            override fun onPropertyChanged(sender: Observable, propertyId: Int) {
+                if (viewModel.isLoading.get())
+                    binding.appprogressBar.setVisibility(View.VISIBLE)
+                else
+                    binding.progressBar.setVisibility(View.GONE)
+            }
+        })
     }
 
     override fun onBackPressed() {
