@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject.di.module;
+package com.example.baseproject.di.module;
 
 import android.app.Application;
 import android.arch.persistence.room.Room;
@@ -8,9 +8,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.quicklinkconsultancy.baseproject.Constants;
-import com.quicklinkconsultancy.baseproject.NetManager;
-import com.quicklinkconsultancy.baseproject.db.*;
+import com.example.baseproject.Constants;
+import com.example.baseproject.NetManager;
+import com.example.baseproject.db.*;
 import dagger.Module;
 import dagger.Provides;
 import okhttp3.Cache;
@@ -20,7 +20,6 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import javax.inject.Named;
 import javax.inject.Singleton;
 import java.text.SimpleDateFormat;
 

@@ -1,11 +1,11 @@
-package com.quicklinkconsultancy.baseproject.ui;
+package com.example.baseproject.ui;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.databinding.ObservableBoolean;
 import android.util.Log;
-import com.quicklinkconsultancy.baseproject.db.Repository;
-import com.quicklinkconsultancy.baseproject.db.model.Country;
+import com.example.baseproject.db.Repository;
+import com.example.baseproject.db.model.Country;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.observers.DisposableSingleObserver;
 import io.reactivex.schedulers.Schedulers;

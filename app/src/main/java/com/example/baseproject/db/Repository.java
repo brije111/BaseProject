@@ -1,7 +1,7 @@
-package com.quicklinkconsultancy.baseproject.db;
+package com.example.baseproject.db;
 
-import com.quicklinkconsultancy.baseproject.NetManager;
-import com.quicklinkconsultancy.baseproject.db.model.Country;
+import com.example.baseproject.NetManager;
+import com.example.baseproject.db.model.Country;
 import io.reactivex.Single;
 
 import java.util.List;

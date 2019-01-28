@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject;
+package com.example.baseproject;
 
 public class Constants {
     public static final String DATABASE_NAME = "my_db";

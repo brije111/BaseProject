@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject
+package com.example.baseproject
 
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
@@ -13,9 +13,9 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.example.android.observability.ui.ViewModelFactory
-import com.quicklinkconsultancy.baseproject.databinding.ActivityMainBinding
-import com.quicklinkconsultancy.baseproject.db.Repository
-import com.quicklinkconsultancy.baseproject.ui.MainViewModel
+import com.example.baseproject.databinding.ActivityMainBinding
+import com.example.baseproject.db.Repository
+import com.example.baseproject.ui.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import javax.inject.Inject

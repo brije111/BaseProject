@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject
+package com.example.baseproject
 
 import android.content.Context
 import android.net.ConnectivityManager
