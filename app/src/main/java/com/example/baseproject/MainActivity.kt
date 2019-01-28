@@ -53,10 +53,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         viewModel.isLoading.addOnPropertyChangedCallback(object : Observable.OnPropertyChangedCallback() {
             override fun onPropertyChanged(sender: Observable, propertyId: Int) {
-                if (viewModel.isLoading.get())
+                /*if (viewModel.isLoading.get())
                     binding.appprogressBar.setVisibility(View.VISIBLE)
                 else
-                    binding.progressBar.setVisibility(View.GONE)
+                    binding.progressBar.setVisibility(View.GONE)*/
             }
         })
     }
