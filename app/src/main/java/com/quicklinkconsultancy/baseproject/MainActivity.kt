@@ -16,6 +16,7 @@ import com.example.android.observability.ui.ViewModelFactory
 import com.quicklinkconsultancy.baseproject.databinding.ActivityMainBinding
 import com.quicklinkconsultancy.baseproject.db.Repository
 import com.quicklinkconsultancy.baseproject.ui.MainViewModel
+import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import javax.inject.Inject
@@ -25,9 +26,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     @Inject lateinit var repository:Repository;
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AndroidInjection.inject(this) // injection happens here
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
-
         val binding:ActivityMainBinding = DataBindingUtil
             .setContentView(this, R.layout.activity_main)
         //init View Model
@@ -54,9 +55,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         viewModel.isLoading.addOnPropertyChangedCallback(object : Observable.OnPropertyChangedCallback() {
             override fun onPropertyChanged(sender: Observable, propertyId: Int) {
                 if (viewModel.isLoading.get())
-                    binding.appprogressBar.setVisibility(View.VISIBLE)
+                    binding.appBarMain.progressBar.setVisibility(View.VISIBLE)
                 else
-                    binding.progressBar.setVisibility(View.GONE)
+                    binding.appBarMain.progressBar.setVisibility(View.GONE)
             }
         })
     }
