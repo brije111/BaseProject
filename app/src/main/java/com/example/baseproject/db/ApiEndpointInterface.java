@@ -1,15 +1,12 @@
-package com.quicklinkconsultancy.baseproject.db;
+package com.example.baseproject.db;
 
-import com.quicklinkconsultancy.baseproject.db.model.Country;
+import com.example.baseproject.db.model.Country;
 import io.reactivex.Single;
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
-import retrofit2.Call;
 import retrofit2.http.*;
 
 import java.util.List;
 
-//import com.quicklinkconsultancy.aptcnew.db.model.Individual;
+//import com.example.aptcnew.db.model.Individual;
 
 /**
  *

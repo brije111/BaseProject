@@ -1,10 +1,10 @@
-package com.quicklinkconsultancy.baseproject.db.dao;
+package com.example.baseproject.db.dao;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
-import com.quicklinkconsultancy.baseproject.db.model.Country;
+import com.example.baseproject.db.model.Country;
 import io.reactivex.Single;
 
 import java.util.List;

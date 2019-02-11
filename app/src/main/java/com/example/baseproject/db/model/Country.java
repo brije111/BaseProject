@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject.db.model;
+package com.example.baseproject.db.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

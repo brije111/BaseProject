@@ -1,8 +1,8 @@
-package com.quicklinkconsultancy.baseproject.di.component;
+package com.example.baseproject.di.component;
 
-import com.quicklinkconsultancy.baseproject.MainActivity;
-import com.quicklinkconsultancy.baseproject.di.module.AppModule;
-import com.quicklinkconsultancy.baseproject.di.module.NetModule;
+import com.example.baseproject.MainActivity;
+import com.example.baseproject.di.module.AppModule;
+import com.example.baseproject.di.module.NetModule;
 import dagger.Component;
 
 import javax.inject.Singleton;

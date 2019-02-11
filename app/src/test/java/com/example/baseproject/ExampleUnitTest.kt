@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject
+package com.example.baseproject
 
 import org.junit.Test
 

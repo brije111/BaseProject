@@ -18,8 +18,8 @@ package com.example.android.observability.ui
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
-import com.quicklinkconsultancy.baseproject.db.Repository
-import com.quicklinkconsultancy.baseproject.ui.MainViewModel
+import com.example.baseproject.db.Repository
+import com.example.baseproject.ui.MainViewModel
 
 /**
  * Factory for ViewModels

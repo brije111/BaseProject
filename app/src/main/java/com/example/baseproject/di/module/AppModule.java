@@ -1,4 +1,4 @@
-package com.quicklinkconsultancy.baseproject.di.module;
+package com.example.baseproject.di.module;
 
 import android.app.Application;
 import dagger.Module;

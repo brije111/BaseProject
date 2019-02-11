@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.quicklinkconsultancy.baseproject.db;
+package com.example.baseproject.db;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;
-import com.quicklinkconsultancy.baseproject.db.dao.CountryDao;
-import com.quicklinkconsultancy.baseproject.db.model.Country;
+import com.example.baseproject.db.dao.CountryDao;
+import com.example.baseproject.db.model.Country;
 
 
 /**
